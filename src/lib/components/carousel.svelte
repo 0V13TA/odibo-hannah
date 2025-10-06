@@ -41,7 +41,7 @@
 	function startAutoplay() {
 		autoplayInterval = setInterval(() => {
 			currentIndex = (currentIndex + 1) % carouselItems.length;
-		}, 10000); // Change every 10 seconds
+		}, 10000);
 	}
 
 	function stopAutoplay() {
@@ -62,19 +62,6 @@
 		currentIndex = index;
 	}
 
-	// Get appropriate image based on screen size
-	function getCurrentImage(item: carousel): string {
-		if (typeof window === 'undefined') return item.desktop; // SSR fallback
-
-		const width = window.innerWidth;
-
-		if (width < 480) return item.phone;
-		if (width < 768) return item.tablet;
-		if (width < 1024) return item.laptop;
-		return item.desktop;
-	}
-
-	// Start autoplay when component mounts
 	import { onMount } from 'svelte';
 	onMount(() => {
 		startAutoplay();
@@ -82,16 +69,27 @@
 	});
 </script>
 
-<div class="carousel-container" on:mouseenter={stopAutoplay} on:mouseleave={startAutoplay}>
-	<!-- Main Carousel Slide -->
+<div
+	class="carousel-container"
+	on:mouseenter={stopAutoplay}
+	on:mouseleave={startAutoplay}
+	role="none"
+>
 	<div class="carousel-slide">
-		{#each carouselItems as item, index}
+		{#each carouselItems as item, index (index)}
 			<div
 				class="slide {index === currentIndex ? 'active' : ''}"
 				style:opacity={index === currentIndex ? 1 : 0}
 			>
 				<img
-					src={getCurrentImage(item)}
+					src={item.desktop}
+					srcset="
+						{item.phone} 480w,
+						{item.tablet} 768w,
+						{item.laptop} 1024w,
+						{item.desktop} 1920w
+					"
+					sizes="100vw"
 					alt={`Carousel slide ${index + 1}`}
 					class="carousel-image"
 				/>
@@ -99,7 +97,6 @@
 		{/each}
 	</div>
 
-	<!-- Navigation Arrows -->
 	<button class="carousel-btn prev" on:click={prevSlide} aria-label="Previous slide">
 		<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
 			<path d="M15 18l-6-6 6-6" />
@@ -112,9 +109,8 @@
 		</svg>
 	</button>
 
-	<!-- Indicators/Dots -->
 	<div class="carousel-indicators">
-		{#each carouselItems as _, index}
+		{#each carouselItems as item, index (item.phone)}
 			<button
 				class="indicator {index === currentIndex ? 'active' : ''}"
 				on:click={() => goToSlide(index)}
@@ -125,10 +121,11 @@
 </div>
 
 <style>
+	/* Your existing CSS remains exactly the same */
 	.carousel-container {
+		margin-bottom: 10px;
 		position: relative;
 		width: 100%;
-		/* height: 500px; */
 		overflow: hidden;
 		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 	}
@@ -136,7 +133,7 @@
 	.carousel-slide {
 		position: relative;
 		width: 100%;
-		height: 100%;
+		height: 75dvh;
 	}
 
 	.slide {
@@ -210,7 +207,6 @@
 		background: rgba(255, 255, 255, 0.8);
 	}
 
-	/* Responsive adjustments */
 	@media (max-width: 768px) {
 		.carousel-container {
 			height: 400px;

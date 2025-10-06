@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	let menuList: HTMLUListElement | null = null;
+	let menuList: HTMLUListElement | null = $state(null);
 
 	function closeMenu() {
 		menuList!.classList.add('hidden');
@@ -12,8 +12,8 @@
 		menuList.focus();
 	}
 
-	function handleKeyDown(e: KeyboardEvent) {
-		if (e.key === 'Escape') closeMenu();
+	function handleKeyDown() {
+		closeMenu();
 	}
 
 	onMount(() => {
@@ -25,7 +25,7 @@
 
 <nav>
 	<div id="menu">
-		<button id="logo" on:click={openMenu}>
+		<button id="logo" onclick={openMenu}>
 			<div id="hamburger">
 				<div class="line"></div>
 				<div class="line"></div>
@@ -35,10 +35,6 @@
 		</button>
 
 		<ul class="hidden" bind:this={menuList} tabindex="-1">
-			<div id="search">
-				<input type="text" placeholder="Search for products" />
-				<img src="/search.svg" alt="search icon" height="25" width="25" />
-			</div>
 			<li>
 				<a href="/">Home</a>
 			</li>
@@ -51,8 +47,9 @@
 			<li>
 				<a href="/contact-us">Contact Us</a>
 			</li>
+			<li><button onclick={closeMenu}>Close</button></li>
 		</ul>
-		<div class="backdrop" on:click={closeMenu} on:keydown={handleKeyDown} role="none"></div>
+		<div class="backdrop" onclick={closeMenu} onkeydown={handleKeyDown} role="none"></div>
 	</div>
 	<img src="/logos/png/COLOR.png" alt="Sites Logo" width="100" />
 	<button id="shopping"><img src="/shopping.svg" alt="Wishlist" height="20" width="20" /></button>
@@ -64,6 +61,7 @@
 		left: 0;
 		z-index: 999;
 		height: 100dvh;
+		width: 30dvw;
 		display: flex;
 		outline: none;
 		position: fixed;
@@ -78,6 +76,15 @@
 		user-select: none;
 		pointer-events: none;
 		transition: left 0.5s ease-in-out;
+	}
+
+	#menu ul li button {
+		width: 100%;
+		height: 100%;
+		padding: 20px 10px;
+		display: inline-block;
+		text-transform: uppercase;
+		text-align: left;
 	}
 
 	#menu ul * {
@@ -101,25 +108,6 @@
 		user-select: none;
 		pointer-events: none;
 		transition: opacity 0.9s ease-in-out;
-	}
-
-	#search {
-		display: flex;
-		padding: 20px 10px;
-		box-shadow: 0 1px 3px black;
-	}
-
-	#search input {
-		padding: 0;
-		border: none;
-		height: 100%;
-		outline: none;
-	}
-
-	#search input:focus {
-		border: none;
-		outline: none;
-		box-shadow: none;
 	}
 
 	#menu ul li {
@@ -224,12 +212,6 @@
 			user-select: auto;
 			cursor: auto;
 			display: flex !important;
-		}
-
-		/* Hide search and backdrop on desktop */
-		#search,
-		.backdrop {
-			display: none;
 		}
 
 		/* Style desktop menu items */
