@@ -36,16 +36,16 @@
 
 		<ul class="hidden" bind:this={menuList} tabindex="-1">
 			<li>
-				<a href="/">Home</a>
+				<a onclick={closeMenu} href="/">Home</a>
 			</li>
 			<li>
-				<a href="/about-us">About Us</a>
+				<a onclick={closeMenu} href="/about-us">About Us</a>
 			</li>
 			<li>
-				<a href="/shop">Shop</a>
+				<a onclick={closeMenu} href="/shop">Shop</a>
 			</li>
 			<li>
-				<a href="/contact-us">Contact Us</a>
+				<a onclick={closeMenu} href="/contact-us">Contact Us</a>
 			</li>
 			<li><button onclick={closeMenu}>Close</button></li>
 		</ul>

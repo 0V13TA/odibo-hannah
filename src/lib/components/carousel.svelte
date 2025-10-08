@@ -133,7 +133,7 @@
 	.carousel-slide {
 		position: relative;
 		width: 100%;
-		height: 75dvh;
+		height: 85dvh;
 	}
 
 	.slide {
@@ -164,7 +164,6 @@
 		justify-content: center;
 		cursor: pointer;
 		transition: all 0.3s ease;
-		backdrop-filter: blur(10px);
 	}
 
 	.carousel-btn:hover {
