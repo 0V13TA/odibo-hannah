@@ -233,6 +233,10 @@
 			color: #666;
 		}
 
+		#menu ul li:last-child {
+			display: none;
+		}
+
 		/* Rearrange layout for desktop */
 		nav {
 			justify-content: center;
