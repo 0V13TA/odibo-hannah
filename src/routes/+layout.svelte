@@ -9,6 +9,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+  <title>Odibo Hannah</title>
 </svelte:head>
 
 <Navbar />
