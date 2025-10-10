@@ -22,6 +22,7 @@
         "@tailwindcss/forms": "^0.5.9",
         "@tailwindcss/typography": "^0.5.15",
         "@tailwindcss/vite": "^4.0.0",
+        "@types/js-cookie": "^3.0.6",
         "@types/node": "^22",
         "eslint": "^9.22.0",
         "eslint-config-prettier": "^10.0.1",
@@ -36,5 +37,8 @@
         "typescript": "^5.0.0",
         "typescript-eslint": "^8.20.0",
         "vite": "^7.0.4"
+    },
+    "dependencies": {
+        "js-cookie": "^3.0.5"
     }
 }

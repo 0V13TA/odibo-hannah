@@ -2,6 +2,7 @@
 	import type { Product } from '$lib/types';
 	import { onMount } from 'svelte';
 	import productsData from '$lib/products.json';
+	import { cartActions } from '$lib/stores/cartStore';
 
 	// Product data
 	const products: Product[] = productsData;
@@ -70,11 +71,22 @@
 		showingCategories = false;
 	};
 
-	// Add to cart function (placeholder)
-	const addToCart = (product: Product) => {
-		// Implement your cart logic here
-		console.log('Added to cart:', product.name);
-		// You could add a toast notification here
+	let addingProductId: string | null = null;
+
+	const handleAddToCart = async (product: Product) => {
+		addingProductId = product.name;
+
+		try {
+			// This will automatically save to cookies via the cart store
+			cartActions.addToCart(product, 1);
+
+			// Optional: Add a small delay for better UX
+			await new Promise((resolve) => setTimeout(resolve, 500));
+		} catch (error) {
+			console.error('Error adding to cart:', error);
+		} finally {
+			addingProductId = null;
+		}
 	};
 </script>
 
@@ -129,14 +141,16 @@
 	<!-- Products Grid -->
 	<div class="products-grid container">
 		{#if productDisplay.length > 0}
-			{#each productDisplay as product (product.id || product.name)}
+			{#each productDisplay as product (product.name)}
 				<article class="product-card">
 					<div class="product-image">
 						<img src={product.image} alt={product.name} loading="lazy" />
 						<button
 							class="add-to-cart-btn"
-							on:click={() => addToCart(product)}
+							on:click={() => handleAddToCart(product)}
 							aria-label={`Add ${product.name} to cart`}
+							disabled={addingProductId === product.name}
+							class:loading={addingProductId === product.name}
 						>
 							Add To Cart
 						</button>

@@ -1,6 +1,12 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { cart } from '$lib/stores/cartStore';
+	import CartMenu from '$lib/components/cartMenu.svelte';
+
 	let menuList: HTMLUListElement | null = $state(null);
+	let cartMenu: { open: () => void };
+
+	const openCart = () => cartMenu.open();
 
 	function closeMenu() {
 		menuList!.classList.add('hidden');
@@ -52,10 +58,26 @@
 		<div class="backdrop" onclick={closeMenu} onkeydown={handleKeyDown} role="none"></div>
 	</div>
 	<img src="/logos/png/COLOR.png" alt="Sites Logo" width="100" />
-	<button id="shopping"><img src="/shopping.svg" alt="Wishlist" height="20" width="20" /></button>
+	<button id="shopping" onclick={openCart}>
+		<img src="/shopping.svg" alt="Wishlist" height="20" width="20" />
+		{#if $cart.itemCount > 0}
+			<span class="cart-badge">{$cart.itemCount}</span>
+		{/if}
+	</button>
 </nav>
 
+<CartMenu bind:this={cartMenu} />
+
 <style>
+	nav {
+		position: sticky;
+		top: 0;
+		left: 0;
+		z-index: 999;
+		background-color: white;
+		box-shadow: 0 0 10px 0px black;
+	}
+
 	#menu ul {
 		top: 0;
 		left: 0;
@@ -157,12 +179,11 @@
 		height: fit-content;
 	}
 
-	button#shopping::after {
+	button#shopping span {
 		--radius: 17px;
 
 		top: -5px;
 		right: -5px;
-		content: '0';
 		color: white;
 		display: grid;
 		border-radius: 50%;
