@@ -239,7 +239,7 @@
 				<form
 					class="contact-form"
 					method="POST"
-					action="https://formsubmit.co/your-email@example.com"
+					action="https://formsubmit.co/odibohannahindustries@gmail.com"
 					on:submit={handleSubmit}
 				>
 					<!-- FormSubmit.co Configuration -->
