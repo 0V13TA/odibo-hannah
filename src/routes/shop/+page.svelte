@@ -42,27 +42,7 @@
 
 	const categories: Category[] = [
 		{ id: 'all', label: 'All Products', value: products },
-		{ id: 'art', label: 'Art', value: products.filter((p) => p.category === 'Art') },
-		{ id: 'food', label: 'Food', value: products.filter((p) => p.category === 'Food') },
-		{ id: 'beauty', label: 'Beauty', value: products.filter((p) => p.category === 'Beauty') },
-		{ id: 'garden', label: 'Garden', value: products.filter((p) => p.category === 'Garden') },
-		{ id: 'fashion', label: 'Fashion', value: products.filter((p) => p.category === 'Fashion') },
-		{ id: 'jewelry', label: 'Jewelry', value: products.filter((p) => p.category === 'Jewelry') },
-		{
-			id: 'beverage',
-			label: 'Beverages',
-			value: products.filter((p) => p.category === 'Beverages')
-		},
-		{
-			id: 'home_decor',
-			label: 'Home Decor',
-			value: products.filter((p) => p.category === 'Home Decor')
-		},
-		{
-			id: 'home_kitchen',
-			label: 'Home & Kitchen',
-			value: products.filter((p) => p.category === 'Home & Kitchen')
-		}
+		{ id: 'food', label: 'Food', value: products.filter((p) => p.category === 'food') },
 	];
 
 	// Filter products by category
