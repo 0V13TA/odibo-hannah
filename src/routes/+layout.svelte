@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href="/logos/png/COLOR.png" />
+	<link rel="icon" href="/favicon.ico" />
 	<!-- Basic Meta -->
 	<title>Odibo Hannah - Quality Products in Nigeria</title>
 	<meta
