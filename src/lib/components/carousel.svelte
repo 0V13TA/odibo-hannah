@@ -9,16 +9,10 @@
 	// Sample carousel data with placeholder images
 	const carouselItems: carousel[] = [
 		{
-			desktop: 'https://placehold.co/1920x1080/4F46E5/FFFFFF?text=Desktop+1',
-			laptop: 'https://placehold.co/1366x768/4F46E5/FFFFFF?text=Laptop+1',
-			tablet: 'https://placehold.co/768x1024/4F46E5/FFFFFF?text=Tablet+1',
-			phone: 'https://placehold.co/480x800/4F46E5/FFFFFF?text=Phone+1'
-		},
-		{
-			desktop: 'https://placehold.co/1920x1080/10B981/FFFFFF?text=Desktop+2',
-			laptop: 'https://placehold.co/1366x768/10B981/FFFFFF?text=Laptop+2',
-			tablet: 'https://placehold.co/768x1024/10B981/FFFFFF?text=Tablet+2',
-			phone: 'https://placehold.co/480x800/10B981/FFFFFF?text=Phone+2'
+			desktop: '/cornflakes/cornflakes-desktop.webp',
+			laptop: '/cornflakes/cornflakes-laptop.webp',
+			tablet: '/cornflakes/cornflakes-tablet.webp',
+			phone: '/cornflakes/cornflakes-phone.webp'
 		}
 	];
 
