@@ -2,7 +2,7 @@
 <script lang="ts">
 	// Company stats
 	const stats = [
-		{ number: '100+', label: 'Happy Customers' },
+		{ number: '5000+', label: 'Happy Customers' },
 		{ number: '1+', label: 'Year of Excellence' },
 		{ number: '1+', label: 'Quality Products' },
 		{ number: '24/7', label: 'Customer Support' }
@@ -12,25 +12,33 @@
 	const values = [
 		{
 			icon: 'quality',
-			title: 'Quality First',
+			title: 'Resillience',
 			description:
-				'We meticulously curate every product to ensure exceptional quality and value for our customers.'
+				'The Unyielding Spirit We embrace the commitment to adapt and persevere through any challenge, mirroring the strength it took to transition from the farm to the marketplace.'
 		},
 		{
 			icon: 'innovation',
-			title: 'Innovation',
-			description: 'Constantly evolving to bring you the latest trends and cutting-edge products.'
+			title: 'Provision',
+			description:
+				'Commitment to Nourishment. Our dedication is to provide dependable, high-quality, and essential food that ensures the well-being and sustenance of your family.'
 		},
 		{
 			icon: 'community',
-			title: 'Community',
+			title: 'Hard Work (Grit)',
 			description:
-				'Building lasting relationships with our customers and supporting local artisans.'
+				'Excellence Through Effort. We believe in meticulous processes and genuine effort—no shortcuts. This grit is the foundation of our quality and product reliability.'
 		},
 		{
 			icon: 'sustainability',
-			title: 'Sustainability',
-			description: 'Committed to eco-friendly practices and supporting sustainable brands.'
+			title: 'Love & Sacrifice',
+			description:
+				'Family First. The selfless motivation that built our brand. We treat our customers and partners with the same care and ethical commitment shown to family.'
+		},
+		{
+			icon: 'authentic',
+			title: 'Aunthenticity',
+			description:
+				'Rooted in a Real Story. Our brand is built on a true, lived narrative. We promise transparency and honor the heritage of the staple crops central to our African community.'
 		}
 	];
 </script>
@@ -42,8 +50,9 @@
 			<div class="hero-content">
 				<h1 class="hero-title">Our Story</h1>
 				<p class="hero-subtitle">
-					From a small boutique to a trusted online destination, we've been curating exceptional
-					products that bring joy to everyday life since 2018.
+					Odibo Hannah - the brand, is built on purpose, fueled by love. Our legacy is woven from
+					corn farms and door-to-door grit—the unyielding spirit that turns vision into provision,
+					now shared in every product.
 				</p>
 			</div>
 		</div>
@@ -63,18 +72,26 @@
 		<div class="container">
 			<div class="mission-grid">
 				<div class="mission-content">
-					<h2>Our Mission</h2>
+					<h2>Our Brand Story</h2>
 					<p>
-						We believe that everyone deserves access to beautifully designed, high-quality products
-						that enhance daily life. Our mission is to bridge the gap between talented creators and
-						discerning customers, creating a marketplace where quality, authenticity, and
-						exceptional service are paramount.
+						Our story begins with her humble corn farm, where she planted basic varieties just to
+						sustain her eight children. That farm was the first lesson in provision and sacrifice.
+						To achieve more, she transitioned to the demanding work of trading tomatoes
+						door-to-door. Her life became a masterpiece of unwavering resilience, love, and sheer
+						hard work—a story woven into the fabric of countless African women today.
+					</p>
+				</div>
+				<div class="mission-content">
+					<h2>The Blueprint In Every Product</h2>
+					<p>
+						Today, that foundational spirit fuels everything we create. The Odibo Hannah brand is a
+						promise to share that dedication with you, embodied in every item we make:
 					</p>
 					<p>
-						Every product in our collection is carefully selected to meet our rigorous standards for
-						design, functionality, and craftsmanship. We're not just selling products; we're
-						curating experiences that inspire and delight.
+						Every item tells her story. When you choose our products, you're not just buying
+						groceries; you're supporting a legacy of love and hard work.
 					</p>
+					<p>Taste the legacy. Build your purpose. Buy Odibo Hannah today.</p>
 				</div>
 				<div class="mission-image">
 					<img
@@ -176,10 +193,7 @@
 		<div class="container">
 			<div class="cta-content">
 				<h2>Ready to Explore Our Collection?</h2>
-				<p>
-					Discover the perfect products that reflect your style and elevate your everyday
-					experiences.
-				</p>
+				<p>Discover the perfect products That Drive You to Build Your Purpose</p>
 				<div class="cta-buttons">
 					<a href="/shop" class="btn btn-primary">Shop Now</a>
 					<a href="/contact-us" class="btn btn-secondary">Contact Us</a>
@@ -399,68 +413,6 @@
 		line-height: 1.6;
 	}
 
-	/* Team Section */
-	.team-section {
-		padding: 80px 0;
-		background: #f8f8f8;
-	}
-
-	.team-grid {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 40px;
-	}
-
-	.team-card {
-		background: white;
-		border-radius: 12px;
-		overflow: hidden;
-		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-		transition: transform 0.3s ease;
-	}
-
-	.team-card:hover {
-		transform: translateY(-5px);
-	}
-
-	.team-image {
-		height: 300px;
-		overflow: hidden;
-	}
-
-	.team-image img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		transition: transform 0.5s ease;
-	}
-
-	.team-card:hover .team-image img {
-		transform: scale(1.05);
-	}
-
-	.team-info {
-		padding: 30px;
-	}
-
-	.team-name {
-		font-size: 1.3rem;
-		font-weight: 600;
-		margin-bottom: 8px;
-		color: #000;
-	}
-
-	.team-role {
-		color: #000;
-		font-weight: 500;
-		margin-bottom: 12px;
-	}
-
-	.team-description {
-		color: #666;
-		line-height: 1.6;
-	}
-
 	/* CTA Section */
 	.cta-section {
 		padding: 80px 0;
@@ -523,8 +475,7 @@
 	/* Responsive Design */
 	@media (max-width: 968px) {
 		.mission-grid,
-		.values-grid,
-		.team-grid {
+		.values-grid {
 			grid-template-columns: 1fr;
 		}
 
@@ -552,7 +503,6 @@
 
 		.mission-section,
 		.values-section,
-		.team-section,
 		.cta-section {
 			padding: 60px 0;
 		}
@@ -585,8 +535,7 @@
 			font-size: 2rem;
 		}
 
-		.value-card,
-		.team-card {
+		.value-card {
 			padding: 30px 20px;
 		}
 	}

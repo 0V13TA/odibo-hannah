@@ -134,8 +134,8 @@
 							</svg>
 						</div>
 						<div class="method-details">
-							<h3>Visit Us</h3>
-							<p>123 Commerce Street<br />Business District<br />Lagos, Nigeria</p>
+							<h3>Our Warehouse</h3>
+							<p>No.2 Alhaji Masha Road<br />Surulere<br />Lagos, Nigeria</p>
 						</div>
 					</div>
 
@@ -153,7 +153,7 @@
 						</div>
 						<div class="method-details">
 							<h3>Call Us</h3>
-							<p>+234 800 123 4567<br />+234 800 765 4321</p>
+							<p>+234 912 314 6458<br />+234 704 617 2030</p>
 						</div>
 					</div>
 
@@ -170,7 +170,7 @@
 						</div>
 						<div class="method-details">
 							<h3>Email Us</h3>
-							<p>hello@example.com<br />support@example.com</p>
+							<p>info@odibohannah.com.ng<br />odibohannahindustries@gmail.com</p>
 						</div>
 					</div>
 				</div>
