@@ -1,13 +1,5 @@
 <!-- AboutUs.svelte -->
 <script lang="ts">
-	// Company stats
-	const stats = [
-		{ number: '5000+', label: 'Happy Customers' },
-		{ number: '1+', label: 'Year of Excellence' },
-		{ number: '1+', label: 'Quality Products' },
-		{ number: '24/7', label: 'Customer Support' }
-	];
-
 	// Values
 	const values = [
 		{
@@ -93,31 +85,9 @@
 					</p>
 					<p>Taste the legacy. Build your purpose. Buy Odibo Hannah today.</p>
 				</div>
-				<div class="mission-image">
-					<img
-						src="https://placehold.co/400x400/A3B4CD/FFAAFF?text=Our+Team+Working+Together"
-						alt="Our team working together"
-						class="image-placeholder"
-					/>
-				</div>
 			</div>
 		</div>
 	</section>
-
-	<!-- Stats Section -->
-	<section class="stats-section">
-		<div class="container">
-			<div class="stats-grid">
-				{#each stats as stat (stat.label)}
-					<div class="stat-item">
-						<div class="stat-number">{stat.number}</div>
-						<div class="stat-label">{stat.label}</div>
-					</div>
-				{/each}
-			</div>
-		</div>
-	</section>
-
 	<!-- Values Section -->
 	<section class="values-section">
 		<div class="container">
