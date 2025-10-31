@@ -69,18 +69,12 @@
 				class="slide {index === currentIndex ? 'active' : ''}"
 				style:opacity={index === currentIndex ? 1 : 0}
 			>
-				<img
-					src={item.desktop}
-					srcset="
-						{item.phone} 480w,
-						{item.tablet} 768w,
-						{item.laptop} 1024w,
-						{item.desktop} 1920w
-					"
-					sizes="100vw"
-					alt={`Carousel slide ${index + 1}`}
-					class="carousel-image"
-				/>
+				<picture>
+					<source media="(max-width: 480px)" srcset={item.phone} />
+					<source media="(max-width: 768px)" srcset={item.tablet} />
+					<source media="(max-width: 1024px)" srcset={item.laptop} />
+					<img src={item.desktop} alt={`Carousel slide ${index + 1}`} class="carousel-image" />
+				</picture>
 			</div>
 		{/each}
 	</div>
