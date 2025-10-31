@@ -3,15 +3,7 @@
 	import productsData from '$lib/products.json';
 	import { cartActions } from '$lib/stores/cartStore';
 
-	const products: Product[] = [
-		productsData[0],
-		productsData[1],
-		productsData[5],
-		productsData[4],
-		productsData[3],
-		productsData[2]
-	];
-
+	const products: Product[] = [productsData[0]];
 	let addingProductId: string | null = null;
 
 	const handleAddToCart = async (product: Product) => {

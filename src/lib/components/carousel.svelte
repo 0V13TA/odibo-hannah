@@ -19,18 +19,6 @@
 			laptop: 'https://placehold.co/1366x768/10B981/FFFFFF?text=Laptop+2',
 			tablet: 'https://placehold.co/768x1024/10B981/FFFFFF?text=Tablet+2',
 			phone: 'https://placehold.co/480x800/10B981/FFFFFF?text=Phone+2'
-		},
-		{
-			desktop: 'https://placehold.co/1920x1080/EF4444/FFFFFF?text=Desktop+3',
-			laptop: 'https://placehold.co/1366x768/EF4444/FFFFFF?text=Laptop+3',
-			tablet: 'https://placehold.co/768x1024/EF4444/FFFFFF?text=Tablet+3',
-			phone: 'https://placehold.co/480x800/EF4444/FFFFFF?text=Phone+3'
-		},
-		{
-			desktop: 'https://placehold.co/1920x1080/F59E0B/FFFFFF?text=Desktop+4',
-			laptop: 'https://placehold.co/1366x768/F59E0B/FFFFFF?text=Laptop+4',
-			tablet: 'https://placehold.co/768x1024/F59E0B/FFFFFF?text=Tablet+4',
-			phone: 'https://placehold.co/480x800/F59E0B/FFFFFF?text=Phone+4'
 		}
 	];
 
@@ -149,6 +137,7 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+		object-position: center;
 	}
 
 	.carousel-btn {
