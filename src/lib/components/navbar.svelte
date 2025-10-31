@@ -31,13 +31,12 @@
 
 <nav>
 	<div id="menu">
-		<button id="logo" onclick={openMenu}>
+		<button id="logo" onclick={openMenu} aria-label="Menu">
 			<div id="hamburger">
 				<div class="line"></div>
 				<div class="line"></div>
 				<div class="line"></div>
 			</div>
-			<p>Menu</p>
 		</button>
 
 		<ul class="hidden" bind:this={menuList} tabindex="-1">
