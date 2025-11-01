@@ -138,7 +138,6 @@
 
 					<div class="product-info">
 						<h3 class="product-name">{product.name}</h3>
-						<p class="product-category">{product.category}</p>
 						<p class="product-price">₦{product.price.toLocaleString()}</p>
 					</div>
 				</article>
