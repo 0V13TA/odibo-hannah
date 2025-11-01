@@ -86,6 +86,7 @@
 			!PAYSTACK_PUBLIC_KEY.startsWith('pk_test_') &&
 			!PAYSTACK_PUBLIC_KEY.startsWith('pk_live_')
 		) {
+      console.log(PAYSTACK_PUBLIC_KEY);
 			return 'Invalid Paystack public key format. Should start with pk_test_ or pk_live_';
 		}
 
@@ -123,7 +124,6 @@
 			script.onload = () => {
 				paystackLoaded = true;
 				paystackLoading = false;
-				console.log('✅ Paystack script loaded successfully');
 				resolve(true);
 			};
 
