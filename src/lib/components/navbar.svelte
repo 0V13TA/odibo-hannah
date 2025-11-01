@@ -162,10 +162,6 @@
 		background-color: grey;
 	}
 
-	#logo:hover p {
-		color: grey;
-	}
-
 	nav {
 		padding: 10px;
 		display: flex;
