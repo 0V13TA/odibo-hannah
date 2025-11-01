@@ -232,6 +232,7 @@
 			user-select: auto;
 			cursor: auto;
 			display: flex !important;
+			width: auto;
 		}
 
 		/* Style desktop menu items */
