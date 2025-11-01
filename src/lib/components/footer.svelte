@@ -288,6 +288,7 @@
 
 		.logo-section {
 			grid-column: 1;
+			align-items: center;
 		}
 
 		.contact-link {
