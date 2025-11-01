@@ -126,7 +126,7 @@
 	.logo-section {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
 		gap: 15px;
 	}
 
