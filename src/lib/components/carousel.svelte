@@ -9,10 +9,10 @@
 	// Sample carousel data with placeholder images
 	const carouselItems: carousel[] = [
 		{
-			desktop: '/cornflakes/cornflakes-desktop.webp',
-			laptop: '/cornflakes/cornflakes-laptop.webp',
-			tablet: '/cornflakes/cornflakes-tablet.webp',
-			phone: '/cornflakes/cornflakes-phone.webp'
+			desktop: '/cornflakes/1920 x 1080 (1).png',
+			laptop: '/cornflakes/_(1366 x 768 px).png',
+			tablet: '/cornflakes/768 x 1024 px.png',
+			phone: '/cornflakes/_480 x 800 px.png'
 		}
 	];
 
