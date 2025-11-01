@@ -184,9 +184,9 @@
 	}
 
 	@media (max-width: 768px) {
-		.carousel-container {
+		/*.carousel-container {
 			height: 400px;
-		}
+		}*/
 
 		.carousel-btn {
 			width: 40px;
@@ -195,9 +195,9 @@
 	}
 
 	@media (max-width: 480px) {
-		.carousel-container {
+		/*.carousel-container {
 			height: 300px;
-		}
+		}*/
 
 		.carousel-btn {
 			width: 36px;
