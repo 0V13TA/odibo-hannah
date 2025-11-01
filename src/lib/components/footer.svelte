@@ -101,7 +101,7 @@
 
 	<!-- Copyright -->
 	<div class="copyright">
-		<p>&copy; 2024 EMB Store. All rights reserved.</p>
+		<p>&copy; 2025 Odibo Hannah Store. All rights reserved.</p>
 	</div>
 </footer>
 
