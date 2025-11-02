@@ -183,7 +183,7 @@
 		background: rgba(255, 255, 255, 0.8);
 	}
 
-	@media (max-width: 768px) {
+	@media screen and (width <= 768px) {
 		/*.carousel-container {
 			height: 400px;
 		}*/
@@ -192,9 +192,13 @@
 			width: 40px;
 			height: 40px;
 		}
+
+		.carousel-slide {
+			height: 50dvh;
+		}
 	}
 
-	@media (max-width: 480px) {
+	@media (width <= 480px) {
 		/*.carousel-container {
 			height: 300px;
 		}*/
@@ -210,6 +214,10 @@
 
 		.carousel-btn.next {
 			right: 10px;
+		}
+
+		.carousel-slide {
+			height: 30dvh;
 		}
 	}
 </style>
