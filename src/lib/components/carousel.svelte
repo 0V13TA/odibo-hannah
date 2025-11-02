@@ -130,6 +130,7 @@
 
 	.carousel-btn {
 		position: absolute;
+		display: none !important;
 		top: 50%;
 		transform: translateY(-50%);
 		border: none;
@@ -156,6 +157,7 @@
 	}
 
 	.carousel-indicators {
+		display: none !important;
 		position: absolute;
 		bottom: 20px;
 		left: 50%;
