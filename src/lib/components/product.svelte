@@ -24,7 +24,7 @@
 </script>
 
 <div class="cont">
-	<h1>Cereal</h1>
+	<h1>Our Quality Products</h1>
 	<div class="products-grid">
 		{#each products as product (product.name)}
 			<div class="product-card">

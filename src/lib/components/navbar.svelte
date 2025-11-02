@@ -52,11 +52,10 @@
 			<li>
 				<a onclick={closeMenu} href="/contact-us">Contact Us</a>
 			</li>
-			<li><button onclick={closeMenu}>Close</button></li>
 		</ul>
 		<div class="backdrop" onclick={closeMenu} onkeydown={handleKeyDown} role="none"></div>
 	</div>
-	<img src="/logos/png/COLOR.png" alt="Sites Logo" width="100" />
+	<a href="/"> <img src="/logos/png/COLOR.png" alt="Sites Logo" width="100" /> </a>
 	<button id="shopping" onclick={openCart}>
 		<img src="/shopping.svg" alt="Wishlist" height="20" width="20" />
 		{#if $cart.itemCount > 0}
@@ -97,15 +96,6 @@
 		user-select: none;
 		pointer-events: none;
 		transition: left 0.5s ease-in-out;
-	}
-
-	#menu ul li button {
-		width: 100%;
-		height: 100%;
-		padding: 20px 10px;
-		display: inline-block;
-		text-transform: uppercase;
-		text-align: left;
 	}
 
 	#menu ul * {

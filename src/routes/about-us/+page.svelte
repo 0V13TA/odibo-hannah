@@ -27,7 +27,7 @@
 				'Family First. The selfless motivation that built our brand. We treat our customers and partners with the same care and ethical commitment shown to family.'
 		},
 		{
-			icon: 'authentic',
+			icon: 'authenticity',
 			title: 'Aunthenticity',
 			description:
 				'Rooted in a Real Story. Our brand is built on a true, lived narrative. We promise transparency and honor the heritage of the staple crops central to our African community.'
@@ -65,6 +65,7 @@
 			<div class="mission-grid">
 				<div class="mission-content">
 					<h2>Our Brand Story</h2>
+					<p>Our brand is built on a simple, yet powerful foundation: the life of Odibo Hannah.</p>
 					<p>
 						Our story begins with her humble corn farm, where she planted basic varieties just to
 						sustain her eight children. That farm was the first lesson in provision and sacrifice.
@@ -148,6 +149,49 @@
 										stroke-width="2"
 									/>
 								</svg>
+							{:else if value.icon === 'authenticity'}
+								<svg
+									viewBox="0 0 240 240"
+									xmlns="http://www.w3.org/2000/svg"
+									aria-labelledby="title desc"
+									role="img"
+								>
+									<title id="title">Authenticity Symbol</title>
+									<desc id="desc"
+										>A minimal black and white badge with a checkmark symbolizing authenticity or
+										verification.</desc
+									>
+
+									<!-- outer circle -->
+									<circle cx="120" cy="120" r="90" fill="none" stroke="black" stroke-width="6" />
+
+									<!-- inner circle -->
+									<circle cx="120" cy="120" r="70" fill="none" stroke="black" stroke-width="3" />
+
+									<!-- ribbon tails -->
+									<path d="M80 180 L60 230 L90 210 L80 180 Z" fill="black" />
+									<path d="M160 180 L180 230 L150 210 L160 180 Z" fill="black" />
+
+									<!-- checkmark -->
+									<path
+										d="M85 125 L110 150 L160 90"
+										fill="none"
+										stroke="black"
+										stroke-width="10"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+
+									<!-- optional text (you can remove if you want only symbol) -->
+									<text
+										x="120"
+										y="190"
+										text-anchor="middle"
+										font-family="sans-serif"
+										font-size="18"
+										fill="black">AUTHENTIC</text
+									>
+								</svg>
 							{/if}
 						</div>
 						<h3 class="value-title">{value.title}</h3>
@@ -163,7 +207,7 @@
 		<div class="container">
 			<div class="cta-content">
 				<h2>Ready to Explore Our Collection?</h2>
-				<p>Discover the perfect products That Drive You to Build Your Purpose</p>
+				<p>Discover the perfect products that drive you to build your purpose</p>
 				<div class="cta-buttons">
 					<a href="/shop" class="btn btn-primary">Shop Now</a>
 					<a href="/contact-us" class="btn btn-secondary">Contact Us</a>
@@ -263,53 +307,6 @@
 
 	.mission-content p:last-child {
 		margin-bottom: 0;
-	}
-
-	.mission-image {
-		border-radius: 12px;
-		overflow: hidden;
-		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-	}
-
-	.image-placeholder {
-		width: 100%;
-		height: 400px;
-		background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		color: #999;
-		font-size: 0.9rem;
-	}
-
-	/* Stats Section */
-	.stats-section {
-		background: #f8f8f8;
-		padding: 60px 0;
-	}
-
-	.stats-grid {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: 40px;
-		text-align: center;
-	}
-
-	.stat-item {
-		padding: 20px;
-	}
-
-	.stat-number {
-		font-size: 2.5rem;
-		font-weight: 700;
-		color: #000;
-		margin-bottom: 8px;
-	}
-
-	.stat-label {
-		color: #666;
-		font-size: 1rem;
-		font-weight: 500;
 	}
 
 	/* Section Header */

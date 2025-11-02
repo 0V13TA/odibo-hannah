@@ -42,7 +42,7 @@
 
 	const categories: Category[] = [
 		{ id: 'all', label: 'All Products', value: products },
-		{ id: 'food', label: 'Food', value: products.filter((p) => p.category === 'food') },
+		{ id: 'food', label: 'Food', value: products.filter((p) => p.category === 'food') }
 	];
 
 	// Filter products by category
@@ -138,6 +138,7 @@
 
 					<div class="product-info">
 						<h3 class="product-name">{product.name}</h3>
+						<p class="category">{product.category}</p>
 						<p class="product-price">₦{product.price.toLocaleString()}</p>
 					</div>
 				</article>
@@ -362,6 +363,11 @@
 
 	.product-card:hover .product-image img {
 		transform: scale(1.05);
+	}
+
+	p.category {
+		color: #a3a3a3;
+		text-transform: capitalize;
 	}
 
 	.add-to-cart-btn {

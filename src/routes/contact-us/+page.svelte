@@ -7,7 +7,6 @@
 	let name = '';
 	let email = '';
 	let phone = '';
-	let company = '';
 	let message = '';
 
 	// Form validation
@@ -68,7 +67,6 @@
 			name = '';
 			email = '';
 			phone = '';
-			company = '';
 			message = '';
 
 			formSubmitted = true;
@@ -294,17 +292,6 @@
 								<span class="error-message">{errors.phone}</span>
 							{/if}
 						</div>
-
-						<div class="form-group">
-							<label for="company" class="form-label">Company</label>
-							<input
-								id="company"
-								name="company"
-								type="text"
-								class="form-input"
-								bind:value={company}
-							/>
-						</div>
 					</div>
 
 					<div class="form-group">
@@ -445,7 +432,7 @@
 
 	.contact-method {
 		display: flex;
-		align-items: flex-start;
+		align-items: center;
 		gap: 16px;
 		margin-bottom: 30px;
 	}
