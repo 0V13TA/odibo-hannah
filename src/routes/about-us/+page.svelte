@@ -446,10 +446,6 @@
 			grid-template-columns: 1fr;
 		}
 
-		.stats-grid {
-			grid-template-columns: repeat(2, 1fr);
-		}
-
 		.hero-title {
 			font-size: 2.5rem;
 		}
@@ -472,11 +468,6 @@
 		.values-section,
 		.cta-section {
 			padding: 60px 0;
-		}
-
-		.stats-grid {
-			grid-template-columns: 1fr;
-			gap: 30px;
 		}
 
 		.cta-buttons {
