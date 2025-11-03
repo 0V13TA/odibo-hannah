@@ -84,7 +84,7 @@
 				>
 					Categories
 					<span class="dropdown-icon {showingCategories ? 'rotated' : ''}">
-						<img src="/downArrow.svg" alt="" height="15" width="15" />
+						<img src="/down-arrow.png" alt="" height="15" width="15" />
 					</span>
 				</button>
 
@@ -407,12 +407,6 @@
 		margin-bottom: 8px;
 		color: #333;
 		text-transform: uppercase;
-	}
-
-	.product-category {
-		color: #999;
-		font-size: 0.9rem;
-		margin-bottom: 8px;
 	}
 
 	.product-price {
