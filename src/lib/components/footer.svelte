@@ -93,8 +93,8 @@
 			<ul class="links-list">
 				<li><a href="/" class="footer-link">Home</a></li>
 				<li><a href="/shop" class="footer-link">Shop</a></li>
-				<li><a href="/about" class="footer-link">About Us</a></li>
-				<li><a href="/contact" class="footer-link">Contact</a></li>
+				<li><a href="/about-us" class="footer-link">About Us</a></li>
+				<li><a href="/contact-us" class="footer-link">Contact</a></li>
 			</ul>
 		</div>
 	</div>
