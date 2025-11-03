@@ -26,7 +26,7 @@
 				</li>
 
 				<li class="contact-item">
-					<a href="https://wa.me/2347030409655" class="contact-link" target="_blank" rel="noopener">
+					<a href="https://wa.me/2349123146458" class="contact-link" target="_blank" rel="noopener">
 						<div class="icon-wrapper">
 							<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
 								<path
