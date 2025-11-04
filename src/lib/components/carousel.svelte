@@ -64,9 +64,9 @@
 				style:opacity={index === currentIndex ? 1 : 0}
 			>
 				<picture>
-					<source media="(width <= 480px)" srcset={item.phone} />
-					<source media="(width <= 768px)" srcset={item.tablet} />
-					<source media="(width <= 1024px)" srcset={item.laptop} />
+					<source media="(max-width: 480px)" srcset={item.phone} />
+					<source media="(max-width: 768px)" srcset={item.tablet} />
+					<source media="(max-width: 1024px)" srcset={item.laptop} />
 					<img src={item.desktop} alt={`Carousel slide ${index + 1}`} class="carousel-image" />
 				</picture>
 			</div>
@@ -185,7 +185,7 @@
 		background: rgba(255, 255, 255, 0.8);
 	}
 
-	@media screen and (width <= 768px) {
+	@media screen and (max-width: 768px) {
 		/*.carousel-container {
 			height: 400px;
 		}*/
@@ -200,7 +200,7 @@
 		}
 	}
 
-	@media (width <= 480px) {
+	@media (max-width: 480px) {
 		/*.carousel-container {
 			height: 300px;
 		}*/
