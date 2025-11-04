@@ -240,10 +240,6 @@
 			color: #666;
 		}
 
-		#menu ul li:last-child {
-			display: none;
-		}
-
 		/* Rearrange layout for desktop */
 		nav {
 			justify-content: center;
@@ -252,7 +248,7 @@
 		}
 
 		/* Position logo on left */
-		nav > img {
+		nav > a > img {
 			order: 1;
 			margin-right: auto;
 		}
@@ -260,6 +256,7 @@
 		/* Position menu in center */
 		#menu {
 			order: 2;
+			margin-left: auto;
 		}
 
 		/* Position shopping cart on right */

@@ -424,7 +424,7 @@
 	}
 
 	/* Responsive Design */
-	@media (max-width: 768px) {
+	@media (width <= 768px) {
 		.shop-title {
 			font-size: 2rem;
 		}
@@ -446,13 +446,17 @@
 		}
 	}
 
-	@media (max-width: 480px) {
+	@media (width <= 480px) {
 		.products-grid {
 			grid-template-columns: 1fr;
 		}
 
 		.container {
 			padding: 0 15px;
+		}
+
+		.add-to-cart-btn {
+			opacity: 1;
 		}
 	}
 </style>
