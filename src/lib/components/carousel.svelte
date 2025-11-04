@@ -124,7 +124,7 @@
 	.carousel-image {
 		width: 100%;
 		height: 100%;
-		object-fit: cover;
+		object-fit: fill;
 		object-position: center;
 	}
 
@@ -196,7 +196,7 @@
 		}
 
 		.carousel-slide {
-			height: 50dvh;
+			height: 30dvh;
 		}
 	}
 
