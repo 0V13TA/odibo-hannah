@@ -42,7 +42,7 @@
 
 	const categories: Category[] = [
 		{ id: 'all', label: 'All Products', value: products },
-		{ id: 'food', label: 'Food', value: products.filter((p) => p.category === 'food') }
+		{ id: 'cereal', label: 'Cereal', value: products.filter((p) => p.category === 'Cereal') }
 	];
 
 	// Filter products by category
@@ -76,7 +76,7 @@
 		<div class="container">
 			<h1 class="shop-title">Shop</h1>
 			<div class="categories-dropdown" bind:this={categoriesDropdown}>
-				<button
+				<!-- <button
 					class="categories-toggle"
 					on:click={toggleCategories}
 					bind:this={categoriesButton}
@@ -86,7 +86,7 @@
 					<span class="dropdown-icon {showingCategories ? 'rotated' : ''}">
 						<img src="/down-arrow.png" alt="" height="15" width="15" />
 					</span>
-				</button>
+				</button> -->
 
 				<div class="dropdown-menu {showingCategories ? 'show' : ''}">
 					<ul class="category-list">
