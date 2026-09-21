@@ -210,7 +210,7 @@ At Odibo Hannah Industries, we are simply far better. Shop with us, and you’d 
 		<div class="container">
 			<div class="cta-content">
 				<h2>Ready to Explore Our Collection?</h2>
-				<p>Discover the perfect products that drive you to build your purpose</p>
+				<p>Discover the perfect products that drive you to be Simply Far Better</p>
 				<div class="cta-buttons">
 					<a href="/shop" class="btn btn-primary">Shop Now</a>
 					<a href="/contact-us" class="btn btn-secondary">Contact Us</a>
