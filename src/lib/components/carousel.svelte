@@ -9,10 +9,16 @@
 	// Sample carousel data with placeholder images
 	const carouselItems: carousel[] = [
 		{
-			desktop: '/cornflakes/1920 x 1080 (1).png',
-			laptop: '/cornflakes/_(1366 x 768 px).png',
-			tablet: '/cornflakes/768 x 1024 px.png',
-			phone: '/cornflakes/_480 x 800 px.png'
+			desktop: '/notebooks/desktop/page-0001.jpg',
+			laptop: '/notebooks/laptop/page-0001.jpg',
+			tablet: '/notebooks/tablet/page-0001.jpg',
+			phone: '/notebooks/phone/page-0001.jpg'
+		},
+    {
+			desktop: '/notebooks/desktop/page-0002.jpg',
+			laptop: '/notebooks/laptop/page-0002.jpg',
+			tablet: '/notebooks/tablet/page-0002.jpg',
+			phone: '/notebooks/phone/page-0002.jpg'
 		}
 	];
 
@@ -86,7 +92,7 @@
 	</button>
 
 	<div class="carousel-indicators">
-		{#each carouselItems as item, index (item.phone)}
+		{#each carouselItems as _, index (index)}
 			<button
 				class="indicator {index === currentIndex ? 'active' : ''}"
 				on:click={() => goToSlide(index)}

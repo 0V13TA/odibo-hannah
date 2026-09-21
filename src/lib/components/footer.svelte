@@ -3,14 +3,14 @@
 		<!-- Logo Section -->
 		<div class="logo-section">
 			<img src="/logos/svg/EMB-COLOR.svg" alt="Website Logo" class="footer-logo" />
-			<p class="tagline">Build Your Purpose</p>
+			<p class="tagline">Simply Far Better</p>
 		</div>
 
 		<!-- Contact Links -->
 		<div class="contact-section">
 			<ul class="contact-list">
 				<li class="contact-item">
-					<a href="mailto:info@odibohannah.com.ng" class="contact-link">
+					<a href="mailto:Odibohannahindustries@gmail.com" class="contact-link">
 						<div class="icon-wrapper">
 							<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
 								<path
@@ -20,7 +20,7 @@
 						</div>
 						<div class="contact-info">
 							<p class="contact-label">Email</p>
-							<p class="contact-detail">info@odibohannah.com.ng</p>
+							<p class="contact-detail">Odibohannahindustries@gmail.com</p>
 						</div>
 					</a>
 				</li>
@@ -64,7 +64,7 @@
 
 				<li class="contact-item">
 					<a
-						href="https://maps.app.goo.gl/gdWg6PcwkxQFT4nH8"
+						href="https://maps.app.goo.gl/rSwCZFinKcSEK1Ri6"
 						class="contact-link"
 						target="_blank"
 						rel="noopener"
@@ -79,7 +79,7 @@
 						<div class="contact-info">
 							<p class="contact-label">Address</p>
 							<address class="contact-detail">
-								No.2 Alhaji Masha Road Surulere Lagos, Nigeria
+              NIS Complex, National Stadium, Surulere, Lagos Nigeria
 							</address>
 						</div>
 					</a>

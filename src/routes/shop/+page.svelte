@@ -355,7 +355,7 @@
 
 	.product-image img {
 		width: 100%;
-		height: 280px;
+    aspect-ratio: 210 / 297;
 		object-fit: cover;
 		display: block;
 		transition: transform 0.5s ease;
@@ -450,6 +450,10 @@
 		.products-grid {
 			grid-template-columns: 1fr;
 		}
+
+    .product-card {
+      border: 1px solid rgba(0, 0, 0, 0.3);
+    }
 
 		.container {
 			padding: 0 15px;

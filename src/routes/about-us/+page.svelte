@@ -40,12 +40,11 @@
 	<section class="about-hero">
 		<div class="container">
 			<div class="hero-content">
-				<h1 class="hero-title">Our Story</h1>
-				<p class="hero-subtitle">
-					Odibo Hannah - the brand, is built on purpose, fueled by love. Our legacy is woven from
-					corn farms and door-to-door grit—the unyielding spirit that turns vision into provision,
-					now shared in every product.
-				</p>
+				<h1 class="hero-title">Our Brand</h1>
+				<div class="hero-subtitle">
+<p>At Odibo Hannah, our mission is rooted in the fundamental truth to be Simply Far Better in life. </p>
+
+				</div>
 			</div>
 		</div>
 	</section>
@@ -64,27 +63,25 @@
 		<div class="container">
 			<div class="mission-grid">
 				<div class="mission-content">
-					<h2>Our Brand Story</h2>
-					<p>Our brand is built on a simple, yet powerful foundation: the life of Odibo Hannah.</p>
-					<p>
-						Our story begins with her humble corn farm, where she planted basic varieties just to
-						sustain her eight children. That farm was the first lesson in provision and sacrifice.
-						To achieve more, she transitioned to the demanding work of trading tomatoes
-						door-to-door. Her life became a masterpiece of unwavering resilience, love, and sheer
-						hard work—a story woven into the fabric of countless African women today.
-					</p>
+					<h2>The New Face of Exercise Books In Nigeria</h2>
+          <p>
+          Odibo Hannah is the new face of retail and manufacturing in Africa. We are a fast growing retail and manufacturing brand dedicated to high demand daily essentials starting with our quality exercise books.
+
+We produce 40 leaves, 60 leaves and 80 leaves exercise books consumed daily by millions of students, families and corporate organizations. 
+
+Our exercise books are premium and eye-catchy with vibrant cover arts and quality paper stock and they are sold at standard market prices. 
+
+We sell to schools, bookstores, neighborhood shops, supermarkets and wholesale distributors. We also sell direct to consumers through our online retail store, odibohannah.com.ng.
+
+We are building more than a stationary company. We are building a trusted and simply far better consumer brand serving millions across Nigeria and beyond
+
+At Odibo Hannah Industries, we are simply far better. Shop with us, and you’d be simply far better too!
+          </p>
 				</div>
 				<div class="mission-content">
-					<h2>The Blueprint In Every Product</h2>
-					<p>
-						Today, that foundational spirit fuels everything we create. The Odibo Hannah brand is a
-						promise to share that dedication with you, embodied in every item we make:
-					</p>
-					<p>
-						Every item tells her story. When you choose our products, you're not just buying
-						groceries; you're supporting a legacy of love and hard work.
-					</p>
-					<p>Taste the legacy. Build your purpose. Buy Odibo Hannah today.</p>
+					<h2>Our Vision</h2>
+                  <p>We were created with a single-minded vision: to become the biggest exercise book manufacturer in Africa. Driven by a commitment to quality, affordability and intentional growth, we are building an enterprise designed to dominate. Over the next five years, we are set to establish a commanding presence in the industry, capturing significant market share by delivering uncompromised quality, scale, and reliability to the educational sector across the continent.
+</p>
 				</div>
 			</div>
 		</div>

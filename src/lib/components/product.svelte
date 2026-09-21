@@ -3,7 +3,7 @@
 	import productsData from '$lib/products.json';
 	import { cartActions } from '$lib/stores/cartStore';
 
-	const products: Product[] = [productsData[0]];
+	const products: Product[] = productsData.slice(0,4);
 	let addingProductId: string | null = null;
 
 	const handleAddToCart = async (product: Product) => {
@@ -79,7 +79,9 @@
 	}
 
 	.product-card {
+    width: 100%;
 		display: flex;
+    max-width: 300px;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
@@ -100,14 +102,17 @@
 	}
 
 	.product-card img {
-		width: 250px;
-		height: 250px;
+    width: 100%;
+		/** width: 250px;
+		height: 250px; */
 		object-fit: cover;
+    aspect-ratio: 210 / 297; /* Enforces exact A4 portrait dimensions */
 		border-radius: 8px;
 		margin-bottom: 15px;
 	}
 
 	.products-grid h3 {
+    width: 100%;
 		color: #333333;
 		font-weight: bold;
 		text-transform: uppercase;
@@ -188,10 +193,6 @@
 			gap: 20px;
 		}
 
-		.product-card img {
-			width: 200px;
-			height: 200px;
-		}
 
 		.product-card {
 			padding: 15px;
@@ -205,12 +206,10 @@
 
 		.product-card {
 			width: 100%;
-			max-width: 300px;
 		}
 
 		.product-card img {
 			width: 100%;
-			height: 250px;
 		}
 	}
 </style>

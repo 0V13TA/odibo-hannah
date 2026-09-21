@@ -40,6 +40,11 @@
 		</button>
 
 		<ul class="hidden" bind:this={menuList} tabindex="-1">
+    <li class="nav-logo">
+        <a onclick={closeMenu} href="/">
+            <img src="/logos/png/COLOR.png" alt="Sites Logo" width="120" />
+        </a>
+    </li>
 			<li>
 				<a onclick={closeMenu} href="/">Home</a>
 			</li>
@@ -77,63 +82,88 @@
 	}
 
 	#menu ul {
-		top: 0;
-		left: 0;
-		z-index: 999;
-		height: 100dvh;
-		width: 30dvw;
-		display: flex;
-		outline: none;
-		position: fixed;
-		flex-direction: column;
-		background-color: white;
-		transition: left 0.5s ease-in-out;
-	}
+        top: 0;
+        left: 0;
+        z-index: 999;
+        height: 100dvh;
+        width: 75dvw; /* Increased width from 30dvw for a proper drawer feel */
+        max-width: 350px; /* Prevents it from getting too wide on tablets */
+        display: flex;
+        outline: none;
+        position: fixed;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: 4px 0 25px rgba(0, 0, 0, 0.15); /* Adds depth */
+        transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Smoother sliding animation */
+    }
 
-	#menu ul.hidden {
-		left: -100%;
-		cursor: default;
-		user-select: none;
-		pointer-events: none;
-		transition: left 0.5s ease-in-out;
-	}
+#menu ul li:first-child {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+  }
 
-	#menu ul * {
-		z-index: 999;
-	}
+#menu ul li:first-child a {
+    width: fit-content;
+  }
 
-	.backdrop {
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100dvw;
-		position: fixed;
-		background-color: #00000033;
-		transition: opacity 0.5s ease-in-out;
-	}
+    #menu ul.hidden {
+        left: -100%;
+        cursor: default;
+        user-select: none;
+        pointer-events: none;
+        box-shadow: none;
+    }
 
-	#menu ul.hidden + * {
-		opacity: 0;
-		left: -100dvw;
-		cursor: default;
-		user-select: none;
-		pointer-events: none;
-		transition: opacity 0.9s ease-in-out;
-	}
+    #menu ul * {
+        z-index: 999;
+    }
 
-	#menu ul li {
-		width: 100%;
-		font-weight: bolder;
-		text-transform: uppercase;
-		border-bottom: 1px solid grey;
-	}
+    .backdrop {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100dvw;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.4); /* Slightly darker backdrop for better contrast */
+        transition: opacity 0.4s ease-in-out;
+        z-index: 998;
+    }
 
-	#menu ul li a {
-		width: 100%;
-		height: 100%;
-		padding: 20px 10px;
-		display: inline-block;
-	}
+    #menu ul.hidden + .backdrop {
+        opacity: 0;
+        left: -100dvw;
+        cursor: default;
+        user-select: none;
+        pointer-events: none;
+        transition: opacity 0.4s ease-in-out, left 0s 0.4s;
+    }
+
+    #menu ul li {
+        width: 100%;
+        list-style: none;
+    }
+
+    #menu ul li a {
+        width: 100%;
+        display: block;
+        padding: 18px 30px; /* Generous padding for touch targets */
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #333;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px; /* Improved readability */
+        border-bottom: 1px solid #f0f0f0; /* Softer, barely-there separator */
+        transition: background-color 0.2s ease, padding-left 0.2s ease;
+    }
+
+    #menu ul li a:hover, 
+    #menu ul li a:active {
+        background-color: #f9f9f9;
+        padding-left: 35px; /* Subtle inward slide on interaction */
+        color: #000;
+    }
 
 	#logo {
 		gap: 10px;

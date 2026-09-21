@@ -1,8 +1,14 @@
 [
   {
-    "image": "/cornflakes/add to cart image 250 x 250 px.svg",
-    "name": "Odibo Hannah Cornflakes",
-    "category": "Cereal",
-    "price": 3850
+    "image": "/notebooks/EXERCISE BOOK COVER-1_page-0001.jpg",
+    "name": "Odibo Hannah Premium Exercise Books (60 Leaves) - 1 Dozen",
+    "category": "Stationary",
+    "price": 5850
+  },
+  {
+    "image": "/notebooks/EXERCISE BOOK COVER-1_page-0002.jpg",
+    "name": "Odibo Hannah Premium Exercise Books (40 Leaves) - 1 Dozen",
+    "category": "Stationary",
+    "price": 5850
   }
 ]
