@@ -133,7 +133,7 @@
 						</div>
 						<div class="method-details">
 							<h3>Our Warehouse</h3>
-							<p>No.2 Alhaji Masha Road<br />Surulere<br />Lagos, Nigeria</p>
+              <p>NIS Complex, National Stadium, Surulere, Lagos Nigeria</p>
 						</div>
 					</div>
 
