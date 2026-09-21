@@ -79,7 +79,7 @@ Our exercise books are premium and eye-catchy with vibrant cover arts and qualit
 
 We sell to schools, bookstores, neighborhood shops, supermarkets and wholesale distributors. We also sell direct to consumers through our online retail store, odibohannah.com.ng.
 
-We are building more than a stationary company. We are building a trusted and simply far better consumer brand serving millions across Nigeria and beyond
+We are building more than a stationary company. We are building a trusted and simply far better consumer brand serving millions across Nigeria and beyond.
 
 At Odibo Hannah Industries, we are simply far better. Shop with us, and you’d be simply far better too!
           </p>
