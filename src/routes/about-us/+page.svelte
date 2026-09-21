@@ -2,37 +2,43 @@
 <script lang="ts">
 	// Values
 	const values = [
-		{
-			icon: 'quality',
-			title: 'Resillience',
-			description:
-				'The Unyielding Spirit We embrace the commitment to adapt and persevere through any challenge, mirroring the strength it took to transition from the farm to the marketplace.'
-		},
-		{
-			icon: 'innovation',
-			title: 'Provision',
-			description:
-				'Commitment to Nourishment. Our dedication is to provide dependable, high-quality, and essential food that ensures the well-being and sustenance of your family.'
-		},
-		{
-			icon: 'community',
-			title: 'Hard Work (Grit)',
-			description:
-				'Excellence Through Effort. We believe in meticulous processes and genuine effort—no shortcuts. This grit is the foundation of our quality and product reliability.'
-		},
-		{
-			icon: 'sustainability',
-			title: 'Love & Sacrifice',
-			description:
-				'Family First. The selfless motivation that built our brand. We treat our customers and partners with the same care and ethical commitment shown to family.'
-		},
-		{
-			icon: 'authenticity',
-			title: 'Aunthenticity',
-			description:
-				'Rooted in a Real Story. Our brand is built on a true, lived narrative. We promise transparency and honor the heritage of the staple crops central to our African community.'
-		}
-	];
+        {
+            icon: 'quality',
+            title: 'Quality',
+            description:
+                'Uncompromising standards in every page. We use premium paper stock and vibrant cover arts to ensure our exercise books stand out in the hands of students and professionals alike.'
+        },
+        {
+            icon: 'innovation',
+            title: 'Affordability',
+            description:
+                'Premium stationery shouldn’t break the bank. We are committed to offering our high-quality 40, 60, and 80 leaves exercise books at standard market prices accessible to all.'
+        },
+        {
+            icon: 'community',
+            title: 'Service',
+            description:
+                'Dedicated to our partners and consumers. From local neighborhood shops and schools to large wholesale distributors, we prioritize exceptional, seamless service at every level.'
+        },
+        {
+            icon: 'sustainability',
+            title: 'Excellence',
+            description:
+                'Simply far better in everything we do. We are driven by a singular vision to become the biggest, most trusted exercise book manufacturer in Africa without cutting corners.'
+        },
+        {
+            icon: 'authenticity',
+            title: 'Reliability',
+            description:
+                'A trusted brand you can count on. We deliver dependable daily essentials, ensuring families, students, and corporate organizations always have the supplies they need.'
+        },
+        {
+            icon: 'authenticity', 
+            title: 'Passion',
+            description:
+                'Driven by a genuine love for education and growth. Our intentional drive to build a commanding consumer brand fuels our commitment to millions across Nigeria and beyond.'
+        }
+    ];
 </script>
 
 <div class="about-page">
@@ -94,7 +100,7 @@ At Odibo Hannah Industries, we are simply far better. Shop with us, and you’d 
 				<p>The principles that guide everything we do</p>
 			</div>
 			<div class="values-grid">
-				{#each values as value (value.title)}
+				{#each values as value, index (index)}
 					<div class="value-card">
 						<div class="value-icon">
 							{#if value.icon === 'quality'}

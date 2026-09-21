@@ -229,6 +229,10 @@
 			display: none;
 		}
 
+    #menu ul li.nav-logo {
+            display: none;
+        }
+
 		/* Show desktop navigation */
 		#menu ul {
 			position: static;
@@ -263,6 +267,7 @@
 			color: #333;
 			text-decoration: none;
 			font-size: 16px;
+      white-space: nowrap;
 			transition: color 0.3s ease;
 		}
 
