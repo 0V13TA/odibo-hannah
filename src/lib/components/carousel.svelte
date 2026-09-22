@@ -9,30 +9,17 @@
 	// Sample carousel data with placeholder images
 	const carouselItems: carousel[] = [
 		{
-			desktop: 'carousels/desktop/1.png',
-			laptop: 'carousels/laptop/1.png',
-			tablet: 'carousels/tablet/1.png',
-			phone: 'carousels/phone/1.png'
+			desktop: 'carousels/desktop/page-0001.png',
+			laptop: 'carousels/laptop/page-0001.png',
+			tablet: 'carousels/tablet/page-0001.png',
+			phone: 'carousels/phone/page-0001.png'
 		},
     {
-			desktop: 'carousels/desktop/2.png',
-			laptop: 'carousels/laptop/2.png',
-			tablet: 'carousels/tablet/2.png',
-			phone: 'carousels/phone/2.png'
+			desktop: 'carousels/desktop/page-0002.png',
+			laptop: 'carousels/laptop/page-0002.png',
+			tablet: 'carousels/tablet/page-0002.png',
+			phone: 'carousels/phone/page-0002.png'
 		},
-    {
-			desktop: 'carousels/desktop/3.png',
-			laptop: 'carousels/laptop/3.png',
-			tablet: 'carousels/tablet/3.png',
-			phone: 'carousels/phone/3.png'
-		},
-    {
-			desktop: 'carousels/desktop/4.png',
-			laptop: 'carousels/laptop/4.png',
-			tablet: 'carousels/tablet/4.png',
-			phone: 'carousels/phone/4.png'
-		}
-
 	];
 
 	let currentIndex = 0;

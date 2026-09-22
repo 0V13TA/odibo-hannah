@@ -48,7 +48,7 @@
 			<div class="hero-content">
 				<h1 class="hero-title">Our Brand</h1>
 				<div class="hero-subtitle">
-<p>At Odibo Hannah, our mission is rooted in the fundamental truth to be Simply Far Better in life. </p>
+<p>At Odibo Hannah, our mission is rooted in this fundamental truth: to be Simply Far Better in life. </p>
 
 				</div>
 			</div>
